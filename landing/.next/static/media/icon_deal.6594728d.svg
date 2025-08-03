@@ -1,0 +1,16 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tag shape -->
+  <path d="M10 20L36 8L56 28L44 54L18 44L10 20Z" fill="#1454f2" stroke="#1454f2" stroke-width="2"/>
+  
+  <!-- Percentage slash -->
+  <line x1="22" y1="42" x2="42" y2="22" stroke="#FFD700" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Top circle -->
+  <circle cx="24" cy="24" r="4" fill="#FFD700"/>
+  
+  <!-- Bottom circle -->
+  <circle cx="40" cy="40" r="4" fill="#FFD700"/>
+
+  <!-- Hole in tag -->
+  <circle cx="34" cy="18" r="3" fill="#5c84f7"/>
+</svg>

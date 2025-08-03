@@ -1,0 +1,27 @@
+{
+  "pages": {
+    "/profile/page": [
+      "static/chunks/_22d2ba._.js",
+      "static/chunks/app_favicon_ico_mjs_53e3fe._.js",
+      "static/chunks/[root of the server]__439109._.css",
+      "static/chunks/app_layout_d9f7ea.js",
+      "static/chunks/app_layout_61af54.js",
+      "static/chunks/app_cc3cc0._.js",
+      "static/chunks/node_modules_next_6244d4._.js",
+      "static/chunks/node_modules_@firebase_auth_dist_esm2017_53fdee._.js",
+      "static/chunks/node_modules_@mui_system_esm_dbf911._.js",
+      "static/chunks/node_modules_@mui_material_ca08aa._.js",
+      "static/chunks/node_modules_axios_lib_c4c49c._.js",
+      "static/chunks/node_modules_8b67a6._.js",
+      "static/chunks/app_profile_page_jsx_f0c018._.js",
+      "static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js",
+      "static/chunks/node_modules_next_dist_compiled_107ce8._.js",
+      "static/chunks/node_modules_next_dist_client_523921._.js",
+      "static/chunks/node_modules_next_dist_4bb10e._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636a._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_d0a96d._.js",
+      "static/chunks/_e69f0d._.js",
+      "static/chunks/_d95469._.js"
+    ]
+  }
+}

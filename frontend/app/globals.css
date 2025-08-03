@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+body {
+  background-image: url("/background.jpg"); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+
+
+* {
+  font-family: 'Montserrat', sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.MasterContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px auto;
+  width: 95%;
+  gap: 20px;
+}
+
+.MasterColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .MasterContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  
+}
+.search-input {
+  border: none;       
+  outline: none;     
+  background: none;   
+  font-size: 16px;    
+  color: black;       
+  width: 100%;        
+}
+
+
+
+
+.navbar-icon {
+  object-fit: contain;
+}
+
+/* Navbar links hover effect */
+.navbar-link {
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-link:hover {
+  color: #555;
+}
+
+/* Prevent scrolling when popup is open */
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* Dark overlay is now LOWER than the popup */
+body.dark-overlay::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1100 !important; /* BELOW ImagePopup */
+  pointer-events: none; /* Prevents blocking interactions */
+}
+
+
+body.dark-overlay .MuiDrawer-paper {
+  backdrop-filter: blur(5px) !important; /* Adds blur instead of removing background */
+  background: rgba(255, 255, 255, 0.9) !important; /* Keeps background slightly visible */
+  pointer-events: auto;
+}
+
+
+
+/* Post Modal Styling */
+.post-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 70%;
+  background: white;
+  border-radius: 26px;
+  border: 2px solid #BEBEBE;  /* ✅ ADDED BORDER */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1300 !important;
+  align-items: center;
+}
+
+.post-content-container {
+ 
+  padding: 20px; /* Adjust the padding */
+  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  height: 350;
+  margin: 10px auto;
+  background: white;
+}
+.divider {
+  width: 107%;
+  
+  background: #CDCDCD;
+  overflow: hidden;
+  margin: 10px 0;
+  border: 1px solid #CDCDCD !important;
+ 
+ 
+  display: block; /* Ensures it's always visible */
+  position: relative; /* Prevents it from collapsing */
+  z-index: 2; /* Keeps it above other elements */
+}
+
+/* Post Header */
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensures all items are vertically centered */
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+
+/* Close Icon */
+.close-icon {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Center the icon inside the flex container */
+  justify-content: center;
+}
+
+
+/* Profile Section */
+.post-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  
+}
+
+.user-photo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Textarea */
+.post-input {
+  width: 100%;
+  height: 120px;
+  margin: 0;
+  padding: 4px;
+  border: none !important; /* ✅ Remove the border */
+  outline: none !important; /* ✅ Remove the focus outline */
+  font-size: 12.5px;
+  resize: none;
+  background: transparent; /* Optional: Keep it clean */
+}
+
+/* Image Preview */
+.image-preview {
+  display: flex;
+ 
+  width: 75%;
+  justify-content: flex-start;
+ 
+}
+
+.image-container {
+  position: relative;
+}
+
+.preview-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: contain; 
+  padding: 0;
+  margin: 0;
+}
+
+
+.delete-icon {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+.post-upload {
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; 
+  
+  padding-left: 15px;
+  margin: 0px;
+}
+
+.upload-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.upload-icon {
+  width: 40px; 
+  height: 40px; 
+  cursor: pointer;
+  padding: 8px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  margin: 10px;
+}
+
+.upload-icon img {
+  width: 22px; 
+  height: 22px;
+}
+
+.upload-icon:hover {
+  background-color: #e0e0e0;
+}
+
+.hidden-file-input {
+  display: none;
+}
+
+.post-button {
+  height: 48px; 
+  padding: 0 90px;
+  background-color: #019543;
+  color: white;
+  border: none;
+  font-weight: 500;
+  border-radius: 24px;
+  font-size: 14px;
+  cursor: pointer;
+ margin: 20px;
+ 
+}
+
+.post-button:hover {
+  background-color: #333;
+}
+
+
+.success-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+
+  z-index: 1000;
+}
+
+.success-popup p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.success-popup button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  float: right;
+}
+
+.success-popup button:hover {
+  background: #0056b3;
+}
+
+

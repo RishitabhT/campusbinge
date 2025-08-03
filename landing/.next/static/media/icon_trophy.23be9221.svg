@@ -1,0 +1,11 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Trophy Cup -->
+  <path d="M50 10H46V8C46 6.9 45.1 6 44 6H20C18.9 6 18 6.9 18 8V10H14C12.9 10 12 10.9 12 12V18C12 24.1 17.5 29 24 29C24 33.4 26.5 37.1 30 38.6V44H22C20.9 44 20 44.9 20 46V50H44V46C44 44.9 43.1 44 42 44H34V38.6C37.5 37.1 40 33.4 40 29C46.5 29 52 24.1 52 18V12C52 10.9 51.1 10 50 10Z" fill="#1454f2"/>
+  
+  <!-- Handles (Gold) -->
+  <path d="M16 18V14H18V20.8C17 20.2 16 19.2 16 18Z" fill="#FFD700"/>
+  <path d="M48 18C48 19.2 47 20.2 46 20.8V14H48V18Z" fill="#FFD700"/>
+
+  <!-- Trophy Base (Lighter Blue) -->
+  <rect x="20" y="50" width="24" height="6" rx="1" fill="#5c84f7"/>
+</svg>
